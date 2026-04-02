@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bản đồ Việt Nam</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="topbar" id="mainHeader">
+      <div class="left-section">
+        <span class="home-btn" onclick="goHome()">🏠</span>
+        <h1 class="map-title">BẢN ĐỒ SỐ: DẤU CHÂN NHÂN NGHĨA – NGUYỄN TRÃI</h1>
+      </div>
+
+      <nav class="nav-menu">
+        <a href="nguyentrai.html">Tìm hiểu sự nghiệp thơ của Nguyễn Trãi</a>
+        <a href="tacpham.html">Các tác phẩm thơ được lấy cảm hứng</a>
+        <a href="mucluc.html">Mục lục</a>
+        <a href="credit.html">Thông tin dự án</a>
+      </nav>
+    </header>
+
+    <div id="map"></div>
+    <!-- SIDEBAR DANH SÁCH ĐỊA ĐIỂM -->
+    <div id="locationList">
+      <h3>Vùng Đông Bắc Bộ & Đồng bằng sông Hồng</h3>
+      <ul id="dongBangSongHong"></ul>
+
+      <h3>Bắc Trung Bộ</h3>
+      <ul id="bacTrungBo"></ul>
+    </div>
+    <!-- SIDEBAR -->
+    <!-- SIDEBAR -->
+    <div id="sidebar">
+      <div class="sidebar-header">
+        <h2 id="title"></h2>
+        <button id="close-btn">✕</button>
+      </div>
+
+      <div id="sidebar-content">
+        <div class="image-container">
+          <button class="arrow-btn left-arrow" onclick="prevImage()">
+            <img src="img/left.png" />
+          </button>
+
+          <img class="main-image" id="slider" />
+
+          <button class="arrow-btn right-arrow" onclick="nextImage()">
+            <img src="img/right.png" />
+          </button>
+        </div>
+
+        <div id="description" class="slide-text"></div>
+      </div>
+    </div>
+    <!-- 🎬 SIDEBAR VIDEO CÔN SƠN -->
+    <div id="videoSidebar">
+      <div class="video-header">
+        <h3>🎬Ngâm thơ Côn Sơn Ca</h3>
+        <button id="closeVideo">✕</button>
+      </div>
+
+      <div class="video-wrapper">
+        <video id="consonVideo" controls>
+          <source src="video/ConSonCa.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
