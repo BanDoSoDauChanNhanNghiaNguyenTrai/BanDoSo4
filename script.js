@@ -1130,7 +1130,7 @@ Nghe nói người thiểu số xưa từng đỗ thuyền trong vịnh.)
       ],
     });
     openVideoSidebar(
-      "video/Vandon.mp4",
+      "video/VanDon.mp4",
       "🎬Đặc khu Vân Đồn và sự phát triển trong thời đại mới",
     );
   });
